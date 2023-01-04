@@ -1,0 +1,277 @@
+body{
+    width: 500px;
+}
+header{
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.location{
+    width: 100%;
+    background-color: #d9d7d7;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.map_icon{
+   align-self: center;
+   margin: 10px;
+}
+
+.explore-section{
+    background-color: #F2F2F2;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+.txt_before_button{
+    width: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: rgb(92, 91, 91);
+    font-size: small;
+}
+button{
+    background-color: orangered;
+    color: white;
+    border-radius: 16px;
+    outline: none;
+    border: 5px;
+	border-color: gray;
+	box-shadow: 2px 2px 10px 3px rgb(217, 216, 216);
+	height: 50px;
+    width: 200px;
+}
+nav{
+    width: 95%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.options{
+    margin: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 17px;
+    width: 350px;
+    background-color: #F2F2F2;
+    border: 5px;
+	border-color: gray;
+	box-shadow: 2px 2px 8px 2px rgb(217, 216, 216);
+	border-radius: 16px;
+    padding-left: 10px;
+    position: relative;
+}
+.number{
+    position: absolute;
+    left: -20px;
+    bottom: 15px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: blueviolet;
+    color: white;
+}
+.mobile_icon{
+    align-self: center;
+    margin: 10px;
+    color: blueviolet;
+    margin-right: 20px;
+}
+.Resturants{
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.food_img{
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5% ;
+    
+}
+.food_imgs{
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5% ;
+    
+}
+.img_container {
+    position: relative;
+  }
+  
+.text-block {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    bottom: 220px;
+    right: 15px;
+    height: 40px;
+    background-color:rgb(123, 245, 123);
+    color:green;
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+.Food_options{
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 0px;
+    border: 5px;
+	border-color: gray;
+	box-shadow: 2px 2px 8px 2px rgb(217, 216, 216);
+	border-radius: 5%;
+}
+.food_txt{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0px;
+    padding-left: 10px;
+    line-height: 0px;
+}
+.heart,.hearts{
+    order: 2;
+    align-self: flex-end;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left:150px;
+    width: 100px;
+    height: 100px;
+    line-height: 0p;
+    text-shadow: 0px 0px 4px #000;
+    color: white;
+}
+.hearts{
+    margin-left:220px; 
+}
+.heart:hover,.hearts:hover{
+    cursor: pointer;
+    color: rgb(195, 51, 51);
+}
+.heart-icon:hover{
+    color: purple;
+    }
+.heart:hover .heart-icon:before {
+    content: "\f004";
+}
+.heart-icon:before {
+    content: "\f004";
+}
+.heart:hover .heart-icon,
+.heart .heart-icon {
+    display: none;
+}
+.heart:hover .heart-outline {
+    display: inline;
+}
+.food_name,.food_names{
+    display: flex;
+    flex-flow: row wrap;
+    width: 150px;
+    height: 50px;
+}
+.food_names{
+    width:90px;
+    height: 50px;
+   
+}
+.city{
+    color: rgb(92, 91, 91);
+}
+.dish{
+    font-weight:bolder;
+}
+
+footer{
+    background-color:black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 30px;
+    font-size: small;
+    line-height: 0px;
+}
+.footer_options{
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer_icon{
+   
+   justify-self: center;
+   margin: 10px;
+}
+a {
+   color: black;
+   text-decoration: none;
+}
+.example{
+    outline-color:blueviolet;
+    color: white;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+	body {
+		margin: 0px;
+	}
+    .Resturants{
+        margin: 20px;
+        background-color:white;
+        width: 650px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .food_title{
+        margin: 50px;
+        position: relative;
+    }
+    .Food_options{
+        width: 270px;
+        height: 280px; 
+        position: relative;
+    }
+    .heart,.hearts{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        height: 40px;
+        
+    }
+    .food_names,.food_name{
+        width:150px;
+        height: 50px;
+    }
+    .food_names{
+        width: 110px;  
+        height: 50px; 
+    }
+    .text-block {
+        bottom: 150px;
+        right: 15px;
+        height: 40px;
+    }
+    .food_img{
+        width: 270px;
+        height: 200px;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5% ;
+        
+    }
+    .food_imgs{
+        width: 270px;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5% ;
+        
+    }
+}
