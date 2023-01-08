@@ -1,5 +1,5 @@
 body{
-    width: 500px;
+    width: 100%;
 }
 header{
     width: 95%;
@@ -22,14 +22,16 @@ header{
 .explore-section{
     background-color: #F2F2F2;
     width: 100%;
+    height: max-content;
     padding-bottom: 20px;
+    padding: 5%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     
 }
 .txt_before_button{
-    width: 350px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -86,9 +88,14 @@ nav{
 .Resturants{
     background-color: #F2F2F2;
     width: 100%;
+    height: max-content;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+.food_title{
+    width: 100%;
+    height: 2%;
 }
 .food_img{
     width: 100%;
@@ -112,8 +119,8 @@ nav{
     display: flex;
     flex-flow: row wrap;
     align-content: center;
-    bottom: 220px;
-    right: 15px;
+    top: 2%;
+    right: 3%;
     height: 40px;
     background-color:rgb(123, 245, 123);
     color:green;
@@ -121,6 +128,7 @@ nav{
     padding-right: 30px;
  }
 .Food_options{
+    height: 20%;
     background-color: white;
     margin-bottom: 25px;
     padding: 0px;
@@ -132,48 +140,36 @@ nav{
 .food_txt{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    height: 50%;
     column-gap: 0px;
-    padding-left: 10px;
+    padding: 10px;
     line-height: 0px;
 }
-.heart,.hearts{
-    order: 2;
-    align-self: flex-end;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-left:150px;
-    width: 100px;
-    height: 100px;
-    line-height: 0p;
-    text-shadow: 0px 0px 4px #000;
-    color: white;
+
+.icon-heart i {
+    font-size: 2em;
+}
+.outline-heart {
+    color: purple
+}
+.fill-heart {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.icon-heart:hover .outline-heart,
+.icon-heart .fill-heart {
+    display: none;
+}
+.icon-heart:hover .fill-heart {
+    display: inline;
+    cursor: pointer;
 }
 .hearts{
     margin-left:220px; 
 }
-.heart:hover,.hearts:hover{
-    cursor: pointer;
-    color: rgb(195, 51, 51);
-}
-.heart-icon:hover{
-    color: purple;
-    }
-.heart:hover .heart-icon:before {
-    content: "\f004";
-}
-.heart-icon:before {
-    content: "\f004";
-}
-.heart:hover .heart-icon,
-.heart .heart-icon {
-    display: none;
-}
-.heart:hover .heart-outline {
-    display: inline;
-}
+
 .food_name,.food_names{
     display: flex;
     flex-flow: row wrap;
@@ -220,58 +216,62 @@ a {
     color: white;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 900px) {
-	body {
-		margin: 0px;
-	}
+@media only screen and (min-width: 550px) and (max-width: 993px) {
+
     .Resturants{
         margin: 20px;
         background-color:white;
-        width: 650px;
+        width: 100%;
+        height: max-content;
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-around;
     }
     .food_title{
         margin: 50px;
         position: relative;
     }
     .Food_options{
-        width: 270px;
-        height: 280px; 
+        width: 45%;
+        height: 45%; 
         position: relative;
     }
-    .heart,.hearts{
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        right: 20px;
-        height: 40px;
-        
+ 
+}
+@media only screen and (min-width:994px) {
+    nav{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
-    .food_names,.food_name{
-        width:150px;
-        height: 50px;
+    .nav_title{
+        display: block;
+        padding-left: 40%;
+        width: 100%;
+       
     }
-    .food_names{
-        width: 110px;  
-        height: 50px; 
+    .options{
+        width: 28%;
     }
-    .text-block {
-        bottom: 150px;
-        right: 15px;
-        height: 40px;
+        .Resturants{
+        margin: 20px;
+        background-color:white;
+        width: 100%;
+        padding-right: 3%;
+        height: max-content;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
     }
-    .food_img{
-        width: 270px;
-        height: 200px;
-        border-top-left-radius: 5%;
-        border-top-right-radius: 5% ;
-        
+    .food_title{
+        margin: 50px;
+       
     }
-    .food_imgs{
-        width: 270px;
-        border-top-left-radius: 5%;
-        border-top-right-radius: 5% ;
-        
+    .Food_options{
+        width: 20%;
+        height: 40%; 
+       
     }
+
 }
