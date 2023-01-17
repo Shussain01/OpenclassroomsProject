@@ -1,0 +1,229 @@
+body {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow {
+  justify-self: space-around;
+  font-size: 1.5em;
+  position: absolute;
+  left: 1%;
+  bottom: 40%;
+}
+
+.img_container {
+  width: 100%;
+  height: 10%;
+}
+
+.food_imgs {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 20% 50%;
+     object-position: 20% 50%;
+  height: 250px;
+}
+
+.food-info {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  width: 96%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  padding: 10px;
+  line-height: 0px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.icon-heart i {
+  font-size: 2em;
+}
+
+.outline-heart {
+  color: purple;
+}
+
+.fill-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-heart:hover .outline-heart,
+.icon-heart .fill-heart {
+  display: none;
+}
+
+.icon-heart:hover .fill-heart {
+  display: inline;
+  cursor: pointer;
+}
+
+.hearts {
+  margin-left: 3%;
+}
+
+.food_name {
+  display: flex;
+  flex-flow: row wrap;
+  width: 35%;
+  height: 50px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.choose {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: auto;
+}
+
+.entrees, .main-dish, .desserts {
+  width: 80%;
+  display: block;
+}
+
+.e-options {
+  margin: 5%;
+  padding: 1%;
+  padding-left: 2%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  row-gap: 17px;
+  width: 80%;
+  height: auto;
+  background-color: white;
+  border: 5px;
+  border-color: gray;
+  box-shadow: 2px 2px 8px 2px rgb(217, 216, 216);
+  border-radius: 16px;
+}
+
+.price {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.course {
+  font-weight: bold;
+  color: rgb(89, 87, 87);
+}
+
+.dish-name {
+  font-weight: bold;
+  color: black;
+}
+
+.name {
+  color: rgb(63, 62, 62);
+}
+
+.order-button {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 20%;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  border-radius: 16px;
+  outline: none;
+  border: 5px;
+  border-color: gray;
+  box-shadow: 2px 2px 10px 3px rgb(217, 216, 216);
+  height: 50px;
+  width: 200px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 30px;
+  font-size: small;
+  line-height: 0px;
+}
+
+.footer_options {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer_icon {
+  justify-self: center;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 993px) {
+  .choose {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  e.options {
+    width: 30%;
+  }
+  .entrees, .main-dish, .desserts {
+    width: 50%;
+    font-size: small;
+  }
+  .order-button {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 994px) {
+  .choose {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  e.options {
+    width: 30%;
+  }
+  .entrees, .main-dish, .desserts {
+    width: 30%;
+    font-size: small;
+  }
+  .order-button {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=option1.css.map */
