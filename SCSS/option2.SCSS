@@ -1,73 +1,73 @@
 @import'./_pages';
 
-.img_container{
-    background-image: url("../Images/img_2.jpg");
-    padding: 5em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 100%;
-  
-  } 
+.img_container {
+	background-image: url("../Images/img_2.jpg");
+	padding: 5em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	width: 100%;
 
-  .main-dish {
-  margin-top: 35%;
-  }
+}
 
-  .order-button {
-   margin-top: 10%;
-  }
+.main-dish {
+	margin-top: 35%;
+}
 
-  @media only screen and (min-width: 550px) and (max-width: 993px) {
-    .main-dish {
-      margin-top: 5%;
-      }
+.order-button {
+	margin-top: 10%;
+}
 
-      .e-options{
-        height: auto;
-        margin: 5%;
-    padding-left: 2%;
-    display: flex;
-    flex-flow: row nowrap;
-   row-gap: 17px;
-    width: 100%;
-   font-size: smaller;
-      }
+@media only screen and (min-width: 550px) and (max-width: 993px) {
+	.main-dish {
+		margin-top: 5%;
+	}
 
-      .order-button {
-        width: 80%;
-        
-      }
+	.e-options {
+		height: auto;
+		margin: 5%;
+		padding-left: 2%;
+		display: flex;
+		flex-flow: row nowrap;
+		row-gap: 17px;
+		width: 100%;
+		font-size: smaller;
+	}
 
-      .name{
-        width: 80%;
-      }
-  }
+	.order-button {
+		width: 80%;
 
-  @media only screen and (min-width:994px) {
-    .main-dish {
-      margin-top: 5%;
-      }
-     
-      .e-options{
-        height: auto;
-        margin: 5%;
-    padding-left: 2%;
-    display: flex;
-    flex-flow: row nowrap;
-   row-gap: 17px;
-    width: 100%;
-   font-size: smaller;
-      }
-      
-      .order-button {
-        width: 80%;
-        margin-top: 0%;
-      }
+	}
 
-      .name{
-        width: 80%;
-        
-      }
-  }
+	.name {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width:994px) {
+	.main-dish {
+		margin-top: 5%;
+	}
+
+	.e-options {
+		height: auto;
+		margin: 5%;
+		padding-left: 2%;
+		display: flex;
+		flex-flow: row nowrap;
+		row-gap: 17px;
+		width: 100%;
+		font-size: smaller;
+	}
+
+	.order-button {
+		width: 80%;
+		margin-top: 0%;
+	}
+
+	.name {
+		width: 80%;
+
+	}
+}

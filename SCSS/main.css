@@ -336,11 +336,11 @@ nav {
 .icon-heart:hover .fill-heart {
   cursor: pointer;
   opacity: 1;
-  -webkit-animation: wipe 5s;
-          animation: wipe 5s;
+  -webkit-animation: fill 3s;
+          animation: fill 3s;
 }
 
-@-webkit-keyframes wipe {
+@-webkit-keyframes fill {
   0% {
     height: 0%;
   }
@@ -349,7 +349,7 @@ nav {
   }
 }
 
-@keyframes wipe {
+@keyframes fill {
   0% {
     height: 0%;
   }
@@ -361,7 +361,8 @@ nav {
   margin-left: 220px;
 }
 
-.food_name, .food_names {
+.food_name,
+.food_names {
   display: flex;
   flex-flow: row wrap;
   width: 150px;

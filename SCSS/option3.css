@@ -186,7 +186,9 @@ a {
   height: auto;
 }
 
-.entrees, .main-dish, .desserts {
+.entrees,
+.main-dish,
+.desserts {
   width: 100%;
   display: block;
   margin: 5%;
@@ -435,7 +437,9 @@ footer {
     width: 20%;
     height: 100%;
   }
-  .entrees, .main-dish, .desserts {
+  .entrees,
+.main-dish,
+.desserts {
     width: 40%;
     font-size: small;
     margin: 3%;
@@ -467,7 +471,9 @@ footer {
   e.options {
     width: 30%;
   }
-  .entrees, .main-dish, .desserts {
+  .entrees,
+.main-dish,
+.desserts {
     width: 30%;
     font-size: small;
   }
