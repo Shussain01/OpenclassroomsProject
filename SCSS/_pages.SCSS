@@ -244,6 +244,8 @@ position: relative;
         margin: 0px 0px 0 0px;
         }
 
+
+
         .e-options:hover .dish-name h4{
             white-space: nowrap;
        text-overflow: ellipsis;
@@ -295,10 +297,17 @@ position: relative;
     height: 0.175rem;
     background:#99E2D0 ;
  }
- .dish-name{
+ .dish-name h4{
     font-weight:bold;
     color: black;
-    width: 95%;
+    width: 90%;
+    height: 40px;
+    margin: 0px 0px 0 0px; 
+    padding-top: 10%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display:inline-block;
    }
  .name{
     color: rgb(63, 62, 62);
@@ -370,7 +379,7 @@ position: relative;
     cursor: pointer;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 993px) {
+@media only screen and (min-width: 550px) and (max-width: 1058px) {
 
     .top-logo{
         width: 34%;
@@ -412,7 +421,7 @@ position: relative;
       }
 }
 
-@media only screen and (min-width:994px) {
+@media only screen and (min-width:1059px) {
 
     .top-logo{
         width: 34%;
