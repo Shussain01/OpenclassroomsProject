@@ -98,10 +98,8 @@ header{
 
 .icon-heart .outline-heart {
     font-size: 2em;
-   
+
 }
-
-
 
 .icon-heart{
     position: relative;
@@ -130,7 +128,6 @@ header{
  .icon-heart:hover .fill-heart {
    cursor: pointer;
     opacity: 1;
-//    animation: fill 3s;
    transform: scale(2.1);
    transition: all 3s;
  }
