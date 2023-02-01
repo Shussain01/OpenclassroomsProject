@@ -5,7 +5,6 @@
   }
   100% {
     opacity: 1;
-    height: 30%;
   }
 }
 @keyframes slidein {
@@ -15,7 +14,6 @@
   }
   100% {
     opacity: 1;
-    height: 30%;
   }
 }
 @-webkit-keyframes spin-animation {
@@ -334,10 +332,17 @@ a {
   background: #99E2D0;
 }
 
-.dish-name {
+.dish-name h4 {
   font-weight: bold;
   color: black;
-  width: 95%;
+  width: 90%;
+  height: 40px;
+  margin: 0px 0px 0 0px;
+  padding-top: 10%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .name {
@@ -413,7 +418,7 @@ footer {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 993px) {
+@media only screen and (min-width: 550px) and (max-width: 1058px) {
   .top-logo {
     width: 34%;
   }
@@ -446,9 +451,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 5%;
   }
 }
-@media only screen and (min-width: 994px) {
+@media only screen and (min-width: 1059px) {
   .top-logo {
     width: 34%;
   }
@@ -477,6 +483,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 1%;
   }
 }
 .img_container {
@@ -497,7 +504,7 @@ footer {
   margin-top: 10%;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 993px) {
+@media only screen and (min-width: 550px) and (max-width: 1058px) {
   .main-dish {
     margin-top: 5%;
   }
@@ -513,12 +520,14 @@ footer {
   }
   .order-button {
     width: 80%;
+    margin-top: 0;
+    padding-top: 0;
   }
   .name {
     width: 80%;
   }
 }
-@media only screen and (min-width: 994px) {
+@media only screen and (min-width: 1059px) {
   .main-dish {
     margin-top: 5%;
   }
@@ -534,7 +543,8 @@ footer {
   }
   .order-button {
     width: 80%;
-    margin-top: 0%;
+    margin-top: 0;
+    padding-top: 0;
   }
   .name {
     width: 80%;

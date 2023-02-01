@@ -38,7 +38,7 @@ body {
 }
 
 .top-logo {
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 
@@ -419,7 +419,11 @@ a {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 993px) {
+@media only screen and (min-width: 550px) and (max-width: 1058px) {
+  .top-logo {
+    width: 40%;
+    height: auto;
+  }
   .Resturants {
     margin: 20px;
     background-color: white;
@@ -432,7 +436,7 @@ a {
     justify-content: space-around;
   }
   .food_title {
-    margin: 50px;
+    margin: 30px;
     position: relative;
   }
   .Food_options {
@@ -441,7 +445,11 @@ a {
     position: relative;
   }
 }
-@media only screen and (min-width: 994px) {
+@media only screen and (min-width: 1059px) {
+  .top-logo {
+    width: 40%;
+    height: auto;
+  }
   nav {
     width: 100%;
     display: flex;
@@ -469,7 +477,7 @@ a {
     justify-content: space-evenly;
   }
   .food_title {
-    margin: 50px;
+    margin: 30px;
   }
   .Food_options {
     width: 20%;
