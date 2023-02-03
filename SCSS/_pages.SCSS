@@ -43,7 +43,7 @@ header{
     height: auto;
 }
 .arrow{
-    justify-self: space-around;
+    justify-content: space-around;
     font-size: 1.5em;
     position: absolute;
     left: 1%;
@@ -171,7 +171,6 @@ a {
   }
  
  .e-options{
-    text-overflow: hidden;
     margin: 5%;
     padding-left:2%;
 display: flex;
